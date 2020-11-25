@@ -4,8 +4,9 @@ bgImage: '/banner.jpg'
 bgImageStyle: {
   height: '450px'
 }
-faceImage: '/head.png'
-heroImage: /hero_write.png
+
+faceImage: '/auto.jpeg'
+heroImage: /auto.jpeg
 heroImageStyle: {
   maxHeight: '200px',
   display: block,

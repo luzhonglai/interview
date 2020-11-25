@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2019-09-03 06:07:46
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-23 17:20:40
+ * @LastEditTime: 2020-11-24 14:25:03
  */
 module.exports = {
   type: 'blog',
@@ -13,6 +13,7 @@ module.exports = {
     category: {
       location: 2, // 在导航栏菜单中所占的位置，默认2
       text: '分类' // 默认 “分类”
+
     },
     tag: {
       location: 3, // 在导航栏菜单中所占的位置，默认3
@@ -26,5 +27,10 @@ module.exports = {
   // 备案号
   record: '****',
   // 项目开始时间
-  startYear: '2020'
+  startYear: '2020',
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  }
 }
