@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2019-09-03 06:07:46
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-25 16:23:40
+ * @LastEditTime: 2020-11-27 00:47:33
  */
 
 const themeConfig = require('./config/theme')
@@ -12,7 +12,7 @@ const plugins = require('./config/plugins')
 
 module.exports = {
   title: '来弟有话说',
-  description:'专注前端技术分享和学习，持续更新前端开发实践中的坑，记录的苦逼生涯。',
+  description:'公众号『来弟有话说』 大前端的追求者，分享前端技术文章，技术原理解析，最新最高效的技术实践！',
   dest: "public",
   head: [
     // 网页标签栏图标

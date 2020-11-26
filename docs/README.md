@@ -4,9 +4,8 @@ bgImage: '/banner.jpg'
 bgImageStyle: {
   height: '450px'
 }
-
 faceImage: '/auto.jpeg'
-heroImage: /auto.jpeg
+heroImage: 
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
@@ -14,7 +13,7 @@ heroImageStyle: {
   borderRadius: '50%',
   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
-isShowTitleInHome: false
+isShowTitleInHome: true
 actionText: About Me
 actionLink: /views/personalInfo/
 # features:

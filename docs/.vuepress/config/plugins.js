@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-24 14:58:22
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-26 11:12:12
+ * @LastEditTime: 2020-11-26 23:39:17
  */
 
 module.exports = [
@@ -108,7 +108,7 @@ module.exports = [
       {
         type: 'button',
         text: '打赏',
-        link: '/view/auto'
+        link: '/views/auto/'
       },
     ]
   }],
@@ -116,8 +116,8 @@ module.exports = [
   ['@vuepress-reco/comments', {
     solution: 'valine',
     options: {
-      appId: '...',// your appId
-      appKey: '...', // your appKey
+      appId: 'ED858vdyTKf2JTRBI1BzSo0E-gzGzoHsz',// your appId
+      appKey: 'lp3V214cdCDb0CaqM9cboXdy', // your appKey
     }
   }],
   /* 弹窗公告插件
