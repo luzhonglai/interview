@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2019-09-03 06:07:46
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-24 14:25:03
+ * @LastEditTime: 2020-11-25 15:45:15
  */
 module.exports = {
   type: 'blog',

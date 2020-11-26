@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-24 14:58:22
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-25 11:07:24
+ * @LastEditTime: 2020-11-26 11:12:12
  */
 
 module.exports = [
@@ -44,42 +44,52 @@ module.exports = [
       },
     },
   ],
-  // 音乐插件
   [
-    'meting',
-    {
-      metingApi: "https://meting.sigure.xyz/api/music",
-      meting: {
-        // 网易
-        server: 'netease',
-        // 读取歌单
-        type: 'playlist',
-        mid: '696441716',
-      },
-      // 不配置该项的话不会出现全局播放器
-      aplayer: {
-        // 吸底模式
-        fixed: true,
-        mini: true,
-        // 自动播放
-        autoplay: true,
-        // 歌曲栏折叠
-        listFolded: true,
-        // 颜色
-        theme: '#f9bcdd',
-        // 播放顺序为随机
-        order: 'random',
-        // 初始音量
-        volume: 0.1,
-        // 关闭歌词显示
-        lrcType: 0,
-      },
-      mobile: {
-        // 手机端去掉cover图
-        cover: false,
-      },
-    },
+    '@vuepress/medium-zoom', {
+      selector: 'img.zoom-custom-imgs',
+      // medium-zoom options here
+      // See: https://github.com/francoischalifour/medium-zoom#options
+      options: {
+        margin: 16
+      }
+    }
   ],
+  // 音乐插件
+  // [
+  //   'meting',
+  //   {
+  //     metingApi: "https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=7653249637&r=0.06430558894529903",
+  //     meting: {
+  //       // 网易
+  //       server: 'tencent',
+  //       // 读取歌单
+  //       type: 'playlist',
+  //       mid: '7653249637',
+  //     },
+  //     // 不配置该项的话不会出现全局播放器
+  //     aplayer: {
+  //       // 吸底模式
+  //       fixed: true,
+  //       mini: true,
+  //       // 自动播放
+  //       autoplay: true,
+  //       // 歌曲栏折叠
+  //       listFolded: true,
+  //       // 颜色
+  //       theme: '#f9bcdd',
+  //       // 播放顺序为随机
+  //       order: 'random',
+  //       // 初始音量
+  //       volume: 0.1,
+  //       // 关闭歌词显示
+  //       lrcType: 0,
+  //     },
+  //     mobile: {
+  //       // 手机端去掉cover图
+  //       cover: false,
+  //     },
+  //   },
+  // ],
 
   ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
     title: '扫扫有惊喜🎉🎉🎉',

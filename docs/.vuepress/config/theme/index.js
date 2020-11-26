@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-23 17:37:20
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-25 10:35:33
+ * @LastEditTime: 2020-11-25 17:52:27
  */
 
 const themeReco = require('./themeReco.js')
@@ -15,7 +15,6 @@ module.exports = Object.assign({}, themeReco, {
   nav,
   sidebar,
   // 自动形成侧边导航
-  type: 'blog',
   mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
   modePicker: true, // 默认 true，false 不显示模式调节按钮，true 则显示
   codeTheme: 'tomorrow',
@@ -34,11 +33,12 @@ module.exports = Object.assign({}, themeReco, {
       link: 'https://vuepress-theme-reco.recoluan.com',
     },
   ],
+  noFoundPageByTencent: true,
   logo: '/auto.jpeg',
   search: true,
   searchMaxSuggestions: 10,
   lastUpdated: 'Last Updated',
-  author: 'luzhonglai',
+  author: '来弟有话说',
   authorAvatar: '/auto.jpeg',
   record: 'xxxx',
   startYear: '2019',
