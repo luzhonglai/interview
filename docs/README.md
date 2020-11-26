@@ -1,11 +1,11 @@
 ---
 home: true
-bgImage: '/banner.jpg'
+bgImage: 'https://www.lookroot.cn/bg.jpg'
 bgImageStyle: {
   height: '450px'
 }
 faceImage: '/auto.jpeg'
-heroImage: 
+heroImage: ''
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
