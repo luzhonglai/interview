@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2019-09-03 06:07:46
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-27 10:24:16
+ * @LastEditTime: 2020-11-27 14:27:51
  */
 
 const themeConfig = require('./config/theme')
@@ -13,7 +13,7 @@ const plugins = require('./config/plugins')
 module.exports = {
   title: '来弟有话说',
   description:'公众号『来弟有话说』 大前端的追求者，分享前端技术文章，技术原理解析，最新最高效的技术实践！',
-  dest: "public",
+  dest: "dist",
   head: [
     // 网页标签栏图标
     ['link', { rel: 'icon', href: '/vuepress/favicon.ico' }],
