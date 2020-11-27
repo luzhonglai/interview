@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-23 17:37:20
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-27 00:50:54
+ * @LastEditTime: 2020-11-27 10:24:35
  */
 
 const themeReco = require('./themeReco.js')
@@ -38,7 +38,7 @@ module.exports = Object.assign({}, themeReco, {
   search: true,
   searchMaxSuggestions: 10,
   lastUpdated: 'Last Updated',
-  author: '来弟有话说',
+  author: 'it_rare',
   authorAvatar: '/auto.jpeg',
   record: 'xxxx',
   startYear: '2019',
