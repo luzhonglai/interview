@@ -2,7 +2,7 @@
 home: true
 bgImage: 'https://www.lookroot.cn/bg.jpg'
 bgImageStyle: {
-  height: '450px'
+  height: '100vh'
 }
 faceImage: '/auto.jpeg'
 heroImage: ''
@@ -13,7 +13,7 @@ heroImageStyle: {
   borderRadius: '50%',
   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
-isShowTitleInHome: true
+isShowTitleInHome: false
 actionText: About Me
 actionLink: /views/personalInfo/
 # features:

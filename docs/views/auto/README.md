@@ -34,4 +34,3 @@ sticky: true
 个人博客：[**来弟有话说**](http://recoluan.gitlab.io) 
 ***
 
-<!-- ### 如果有话对我讲，那就请[联系我](https://mp.weixin.qq.com/s/mXFqeUTegdvPliXknAAG_A) -->
