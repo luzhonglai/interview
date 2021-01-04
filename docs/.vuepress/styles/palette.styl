@@ -21,3 +21,45 @@ $backgroundColor = #ffffff                  // 悬浮块背景色
   background-repeat: no-repeat;
   height: 100vh;
  }
+
+ .scroll-down {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 12rem auto 0;
+  bottom: 45px;
+  font-size: 34px;
+  text-align: center;
+ }
+
+ .bounce-enter-active {
+    animation: bounce-in 5s 3s infinite;
+ }
+
+ .scroll-down:after{
+  content: "";
+  display: block;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  transform: rotate(135deg);
+ }
+
+ .scroll-down, .scroll-down:after {
+    width: 20px;
+    height: 20px;
+ }
+
+@-webkit-keyframes bounce-in{
+  0%{transform:translateY(0)}
+  20%{transform:translateY(0)}
+  50%{transform:translateY(-20px)}
+  80%{transform:translateY(0)}
+  to{transform:translateY(0)}
+} 
+ @keyframes bounce-in{
+   0%{transform:translateY(0)}
+   20%{transform:translateY(0)}
+   50%{transform:translateY(-20px)}
+   80%{transform:translateY(0)}
+   to{transform:translateY(0)}
+}
