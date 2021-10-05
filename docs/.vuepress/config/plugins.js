@@ -122,7 +122,7 @@ module.exports = [
       show: true, //  是否显示
       zIndex: 3, // 层级
       img: {
-        replace: false, // false 默认图 true 换图 需要填写httpUrl地址
+        replace: true, // false 默认图 true 换图 需要填写httpUrl地址
         httpUrl: 'https://www.zpzpup.com/assets/image/sakura.png' // 绝对路径
       },
     },
