@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-23 17:37:20
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-27 10:24:35
+ * @LastEditTime: 2021-11-01 14:50:17
  */
 
 const themeReco = require('./themeReco.js')
@@ -20,18 +20,18 @@ module.exports = Object.assign({}, themeReco, {
   codeTheme: 'tomorrow',
   subSidebar: 'auto', //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
   friendLink: [
-    {
-      title: '午后南杂',
-      desc: 'Enjoy when you can, and endure when you must.',
-      email: '1156743527@qq.com',
-      link: 'https://www.recoluan.com',
-    },
-    {
-      title: 'vuepress-theme-reco',
-      desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-      avatar: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
-      link: 'https://vuepress-theme-reco.recoluan.com',
-    },
+    // {
+    //   title: '午后南杂',
+    //   desc: 'Enjoy when you can, and endure when you must.',
+    //   email: '1156743527@qq.com',
+    //   link: 'https://www.recoluan.com',
+    // },
+    // {
+    //   title: 'vuepress-theme-reco',
+    //   desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+    //   avatar: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
+    //   link: 'https://vuepress-theme-reco.recoluan.com',
+    // },
   ],
   noFoundPageByTencent: true,
   logo: '/auto.jpeg',
