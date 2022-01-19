@@ -1,24 +1,23 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Zhonglai Lu
  * @Date: 2019-09-03 06:07:46
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2021-11-01 14:55:02
+ * @LastEditTime: 2022-01-19 15:15:04
  */
 module.exports = {
   type: 'blog',
   // 博客设置
   blogConfig: {
-    category: {
-      location: 2, // 在导航栏菜单中所占的位置，默认2
-      text: '分类' // 默认 “分类”
-
-    },
+    // category: {
+    //   location: 2, // 在导航栏菜单中所占的位置，默认2
+    //   text: 'interview' // 默认 “分类”
+    // },
     tag: {
       location: 3, // 在导航栏菜单中所占的位置，默认3
-      text: '标签' // 默认 “标签”
-    }
+      text: '标签', // 默认 “标签”
+    },
   },
   // 最后更新时间
   lastUpdated: 'Last Updated', // string | boolean
@@ -30,7 +29,7 @@ module.exports = {
   startYear: '2020',
   locales: {
     '/': {
-      lang: 'zh-CN'
-    }
-  }
+      lang: 'zh-CN',
+    },
+  },
 }

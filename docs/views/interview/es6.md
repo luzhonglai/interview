@@ -5,7 +5,7 @@ tags:
 
 - es6
 categories:
-- 2022
+- interview 
 sticky: true
 
 ---
@@ -47,13 +47,12 @@ const fn = () =>{
 // 改进
 async function allReq(){
   const fn1 = await ReqAwait()
-  const fn2 = await ReqAwait()
-}
+  const fn2 = await ReqAwait()                          
 
 // 补充 并发请求
 Promise.all([fn1,fn2).then(res=>) // all 失败就挂点
 Promise.race([fn1,fn2]).then(res=>)// 一个成功就返回
-Promise.some([fn1,fn2]).then(res=>)
+Promise.any([fn1,fn2]).then(res=>)// 
 ```
 
 ### 数组处理
@@ -70,5 +69,28 @@ if(
 }
 // 改进
 const condition = [1,2,3,4]
-if(condition.includes(type)) {...}
+if(condition.includes(type)) {//...}
+```
+
+### 关于数据扁平化书处理
+
+```js
+
+const deps = {
+'采购部':[1,2,3],
+'人事部':[5,8,12],
+'行政部':[5,14,79],
+'运输部':[3,64,105],
+}
+
+let member = []
+for(let keys in deps) {
+  const value = deps[keys]
+  if(Array.isArray(value)) {
+    member = [nember, ...value]
+  }
+}
+member = [...new Set(member)]
+//改进
+let member = Object.values(deps).flat(1)
 ```
