@@ -4,7 +4,7 @@
  * @Author: Zhonglai Lu
  * @Date: 2020-11-24 14:58:22
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2020-11-26 23:39:17
+ * @LastEditTime: 2022-01-24 16:28:43
  */
 
 module.exports = [
@@ -45,83 +45,86 @@ module.exports = [
     },
   ],
   [
-    '@vuepress/medium-zoom', {
+    '@vuepress/medium-zoom',
+    {
       selector: 'img.zoom-custom-imgs',
-      // medium-zoom options here
-      // See: https://github.com/francoischalifour/medium-zoom#options
       options: {
-        margin: 16
-      }
-    }
+        margin: 16,
+      },
+    },
   ],
-  // 音乐插件
-  // [
-  //   'meting',
-  //   {
-  //     metingApi: "https://api.i-meto.com/meting/api?server=tencent&type=playlist&id=7653249637&r=0.06430558894529903",
-  //     meting: {
-  //       // 网易
-  //       server: 'tencent',
-  //       // 读取歌单
-  //       type: 'playlist',
-  //       mid: '7653249637',
-  //     },
-  //     // 不配置该项的话不会出现全局播放器
-  //     aplayer: {
-  //       // 吸底模式
-  //       fixed: true,
-  //       mini: true,
-  //       // 自动播放
-  //       autoplay: true,
-  //       // 歌曲栏折叠
-  //       listFolded: true,
-  //       // 颜色
-  //       theme: '#f9bcdd',
-  //       // 播放顺序为随机
-  //       order: 'random',
-  //       // 初始音量
-  //       volume: 0.1,
-  //       // 关闭歌词显示
-  //       lrcType: 0,
-  //     },
-  //     mobile: {
-  //       // 手机端去掉cover图
-  //       cover: false,
-  //     },
-  //   },
-  // ],
 
-  ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
-    title: '扫扫有惊喜🎉🎉🎉',
-    body: [
-      {
-        type: 'title',
-        content: '欢迎关注公众号 🎉🎉🎉',
-        style: 'text-aligin: center;'
-      },
-      {
-        type: 'image',
-        src: '/wechat.jpg'
-      }
-    ],
-    footer: [
-      {
-        type: 'button',
-        text: '打赏',
-        link: '/views/auto/'
-      },
-    ]
-  }],
-  // 评论插件
-  ['@vuepress-reco/comments', {
-    solution: 'valine',
-    options: {
-      appId: 'ED858vdyTKf2JTRBI1BzSo0E-gzGzoHsz',// your appId
-      appKey: 'lp3V214cdCDb0CaqM9cboXdy', // your appKey
-    }
-  }],
-  /* 弹窗公告插件
   [
-    "@vuepress-yard/vuepress-plugin-window"
-  ], */
+    '@vuepress-reco/vuepress-plugin-bulletin-popover',
+    {
+      title: '扫扫有惊喜🎉🎉🎉',
+      body: [
+        {
+          type: 'title',
+          content: '欢迎关注公众号 🎉🎉🎉',
+          style: 'text-aligin: center;',
+        },
+        {
+          type: 'image',
+          src: '/wechat.jpg',
+        },
+      ],
+      footer: [
+        {
+          type: 'button',
+          text: '打赏',
+          link: '/views/auto/',
+        },
+      ],
+    },
+  ],
+  // 评论插件
+  [
+    '@vuepress-reco/comments',
+    {
+      solution: 'valine',
+      options: {
+        appId: 'ED858vdyTKf2JTRBI1BzSo0E-gzGzoHsz', // your appId
+        appKey: 'lp3V214cdCDb0CaqM9cboXdy', // your appKey
+      },
+    },
+  ],
+  [
+    'vuepress-plugin-helper-live2d',
+    {
+      // 是否开启控制台日志打印(default: false)
+      log: false,
+      live2d: {
+        // 是否启用(关闭请设置为false)(default: true)
+        enable: true,
+        // 模型名称(default: hibiki)
+        model: 'koharu',
+        display: {
+          position: 'right', // 显示位置：left/right(default: 'right')
+          width: 135, // 模型的长度(default: 135)
+          height: 300, // 模型的高度(default: 300)
+          hOffset: 65, //  水平偏移(default: 65)
+          vOffset: 0, //  垂直偏移(default: 0)
+        },
+        mobile: {
+          show: false, // 是否在移动设备上显示(default: false)
+        },
+        react: {
+          opacity: 1, // 模型透明度(default: 0.8)
+        },
+      },
+    },
+  ],
+  [
+    'sakura',
+    {
+      num: 20, // 默认数量
+      show: true, //  是否显示
+      zIndex: 3, // 层级
+      img: {
+        replace: false, // false 默认图 true 换图 需要填写httpUrl地址
+        httpUrl: '...', // 绝对路径
+      },
+    },
+  ],
 ]
