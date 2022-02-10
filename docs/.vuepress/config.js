@@ -4,7 +4,7 @@
  * @Author: ZhongLai Lu
  * @Date: 2021-09-28 15:46:53
  * @LastEditors: Zhonglai Lu
- * @LastEditTime: 2022-02-07 11:00:14
+ * @LastEditTime: 2022-02-07 16:01:50
  */
 
 const plugins = require('./config/plugins')
@@ -65,7 +65,7 @@ module.exports = {
   themeConfig: {
     mode: 'dark',
     noFoundPageByTencent: true,
-    logo: './public/auto.jpeg',
+    logo: '/public/auto.jpeg',
     // valineConfig: {
     //   appId: 'e6ojaBbYmQvJLNWeBouhonP6-gzGzoHsz', // your appId
     //   appKey: '050ScrJoJUW37QqwVwzSmKoX', // your appKey
@@ -98,7 +98,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: 'Last Updated',
     author: 'rare',
-    authorAvatar: './public/auto.jpeg',
+    authorAvatar: '/public/auto.jpeg',
     record: '无备案',
     startYear: '2021',
   },
