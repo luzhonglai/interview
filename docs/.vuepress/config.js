@@ -76,7 +76,7 @@ module.exports = {
     blogConfig: {
       tag: {
         location: 3,
-        text: '无关紧要的小标签',
+        text: '小标签',
       },
     },
     friendLink: [

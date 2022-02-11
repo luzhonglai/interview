@@ -11,7 +11,7 @@ module.exports = {
     {
       title: 'Vue3',
       collapsable: false,
-      children: ['api'],
+      children: ['Api','vue3'],
     },
   ],
   '/views/Node/': [
