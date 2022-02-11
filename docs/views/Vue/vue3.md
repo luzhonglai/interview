@@ -1,10 +1,8 @@
 ---
 title: vue3 基础篇
 date: 2022-2-11
-tags:
-  - vue
 categories:
-  - Vue
+  - Vue
 ---
 
 ## 一、基础Api
@@ -275,7 +273,7 @@ inject：在任何后代组件中接收想要添加在这个组件上的数据�
 </script>
 
 ```
-## 三、 compostion Api 规范
+## 三、 compostion Api
 ### setup
 #### callback 参数
 

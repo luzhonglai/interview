@@ -1,5 +1,5 @@
 ---
-title: es6 推荐的写法
+title: es6 好的写法
 date:  2022-1-18
 tags:
 
