@@ -1,0 +1,86 @@
+<!--
+ * @Description: 
+ * @Author: luzhonglai
+ * @Date: 2022-01-18 11:40:32
+ * @LastEditors: luzhonglai
+ * @LastEditTime: 2022-09-27 01:25:38
+ * @FilePath: /blog/docs/test/订阅发布器.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    /*
+     * @Descripttion:
+     * @repository: https://github.com/luzhonglai
+     * @Author: ZhongLai Lu
+     * @Date: 2022-01-18 11:40:32
+     * @LastEditors: luzhonglai
+     * @LastEditTime: 2022-09-27 01:06:53
+     */
+    // const deps = {
+    //   '采购部':[1,2,3],
+    //   '人事部':[5,8,12],
+    //   '行政部':[5,14,79],
+    //   '运输部':[3,64,105],
+    //   }
+    //   let member = [];
+    //   for (let item in deps){
+    //       const value = deps[item];
+    //       if(Array.isArray(value)){
+    //           member = [...member,...value]
+    //       }
+    //   }
+
+    //   member = [...new Set(member)]
+    //   console.log(member,'-----abc------')
+
+    //   //改进
+    //   // let member = Object.values(deps).flat(1)
+
+    /**
+     * @description:
+     * @return {*}
+     */
+    class evsBus {
+      constructor() {
+        // 事件队列 标记
+        this.map = {}
+      }
+
+      on(type, fn) {
+        let fns = this.map[type]
+        // 判断当前type 是否在队列
+        if (!fns) {
+          // 没有添加
+          this.map[type] = []
+        }
+
+        this.map[type].push(fn)
+      }
+
+      emit(type, ...args) {
+        const fns = this.map[type]
+        fns && fns.length && fns.map((fn) => fn(...args))
+      }
+    }
+
+    const bus = new evsBus()
+
+    bus.on('rare', function(arr) {
+      console.log('吃饭了，我们走！'  + arr)
+    })
+
+    bus.emit('rare', '111')
+    // 发布事件chifan
+    // evsBus.emit('chifan')
+
+  </script>
+</html>
