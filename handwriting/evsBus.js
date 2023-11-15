@@ -3,14 +3,15 @@
  * @Author: luzhonglai
  * @Date: 2022-09-27 01:30:05
  * @LastEditors: luzhonglai
- * @LastEditTime: 2022-10-04 20:09:03
- * @FilePath: /blog/docs/test/evsBus.js
+ * @LastEditTime: 2023-10-20 01:15:18
+ * @FilePath: \interview\handwriting\evsBus.js
  */
 
 class evsBus {
   constructor() {
     // 事件队列 标记
     this.map = new Map()
+    debugger
   }
 
   // 监听事件
