@@ -33,21 +33,24 @@ class evsBus {
 
 const bus = new evsBus()
 
-bus.on('rare', function(arr) {
-  console.log('吃饭了，我们走！' + arr)
-})
 
-bus.on('rare', function(arr) {
-  console.log('吃饭了，我们走阿斯顿撒打算！' + arr)
-})
-
-bus.on('rare1', function(arr) {
-  console.log('吃饭了，我们走！' + arr)
-})
-
-bus.on('rareasds1', function(arr) {
-  console.log('吃饭萨达萨达是了，我们走' + arr)
-})
+setTimeout(() => {
+  bus.on('rare', function(arr) {
+    console.log('吃饭了，我们走！' + arr)
+  })
+  
+  bus.on('rare', function(arr) {
+    console.log('吃饭了，我们走阿斯顿撒打算！' + arr)
+  })
+  
+  bus.on('rare1', function(arr) {
+    console.log('吃饭了，我们走！' + arr)
+  })
+  
+  bus.on('rareasds1', function(arr) {
+    console.log('吃饭萨达萨达是了，我们走' + arr)
+  })
+}, 1000)
 
 bus.emit('rare', '111')
 
