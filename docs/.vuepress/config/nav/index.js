@@ -19,6 +19,7 @@ module.exports = [
       },
     ],
   },
+  { text: '前端小记', link: '/blogs/category1', icon: 'reco-tag' },
   { text: '时间抽', link: '/timeline/', icon: 'reco-date' },
   {
     text: '关于我',

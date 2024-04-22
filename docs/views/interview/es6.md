@@ -50,9 +50,14 @@ async function allReq(){
   const fn2 = await ReqAwait()                          
 
 // 补充 并发请求
-Promise.all([fn1,fn2).then(res=>) // all 失败就挂点
+Promise.all([fn1,fn2).then(res=>) //   全部成功 then
 Promise.race([fn1,fn2]).then(res=>)// 一个成功就返回
-Promise.any([fn1,fn2]).then(res=>)// 
+Promise.any([fn1,fn2]).then(res=>)//  全部是失败才reject
+Promise.resolve([fn1,fn2]) // 没有返回值 undefined
+Promise.reject([fn1,fn2]) // 没有返回值 undefined
+Promise.catch() // reject he error 错误监听
+Promise.finally() // 
+Promise.allSettled() // 只有等到参数数组的所有 Promise 对象都发生状态变更（不管是fulfilled还是rejected）
 ```
 
 ### 数组处理
@@ -61,7 +66,7 @@ Promise.any([fn1,fn2]).then(res=>)//
 // 错误
 if(
     type == 1 ||
-    type == 2 ||
+    type == 2 || 
     type == 3 ||
     type == 4 ||
 ){
@@ -69,7 +74,27 @@ if(
 }
 // 改进
 const condition = [1,2,3,4]
-if(condition.includes(type)) {//...}
+if(condition.includes(type)) {}
+
+
+[].findIndex()
+[].find()
+[].map()
+[].reduce()
+[].some() // 
+[].filter()
+[].includes() 
+[].values() 
+[].keys() // 获取数组索引
+Array.from() // 伪数组转数组
+[...[111,222]] // 扩展运算符
+Array.to(1,2,3,4,4)  // == [1,2,3,4,4]
+for (let value of [])
+
+
+
+
+
 ```
 
 ### 关于数据扁平化书处理
